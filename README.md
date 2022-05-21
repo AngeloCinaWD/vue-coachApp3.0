@@ -1,6 +1,6 @@
 # Vue 3 App
 
-This app permit you to choice a coach and send him a message with email and text.
+This app permits you to choice a coach and send him a message with email and text.
 
 You can register as user and then as coach.
 
@@ -13,3 +13,5 @@ To use App you need to create a Firebase Project with RealTimeDataBase, set auth
 ![immagine](readme_img/01.png)
 
 </div>
+
+To test app you can visit: https://vue3-coach-app.web.app/
