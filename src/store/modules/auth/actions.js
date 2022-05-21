@@ -2,13 +2,13 @@ let timer;
 
 export default {
   async login(context, payload) {
-    context.dispatch('auth', {
+    return context.dispatch('auth', {
       ...payload,
       mode: 'login',
     });
   },
   async signup(context, payload) {
-    context.dispatch('auth', {
+    return context.dispatch('auth', {
       ...payload,
       mode: 'signup',
     });
@@ -18,11 +18,11 @@ export default {
 
     if (mode === 'signup') {
       url =
-        'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=insert_api_key_here';
+        'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDkfhq8oHsJFEdJ284XTzXPP5I9femeowU';
     }
 
     let url =
-      'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=insert_api_key_here';
+      'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDkfhq8oHsJFEdJ284XTzXPP5I9femeowU';
 
     const response = await fetch(url, {
       method: 'POST',

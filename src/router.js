@@ -1,13 +1,26 @@
+// import { defineAsyncComponent } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 import CoachesList from './pages/coaches/CoachesList.vue';
-import CoachDetails from './pages/coaches/CoachDetails.vue';
-import CoachRegistration from './pages/coaches/CoachRegistration.vue';
+// import CoachDetails from './pages/coaches/CoachDetails.vue';
+// import CoachRegistration from './pages/coaches/CoachRegistration.vue';
 import RequestsReceived from './pages/requests/RequestsReceived.vue';
 import ContactCoach from './pages/requests/ContactCoach.vue';
 import NotFound from './pages/NotFound.vue';
 import UserAuth from './pages/auth/UserAuth.vue';
 import store from './store/index.js';
+
+// const CoachDetails = defineAsyncComponent(() =>
+//   import('./pages/coaches/CoachDetails.vue')
+// );
+
+// const CoachRegistration = defineAsyncComponent(() =>
+//   import('./pages/coaches/CoachRegistration.vue')
+// );
+
+const CoachDetails = () => import('./pages/coaches/CoachDetails.vue');
+
+const CoachRegistration = () => import('./pages/coaches/CoachRegistration.vue');
 
 const router = createRouter({
   history: createWebHistory(),
