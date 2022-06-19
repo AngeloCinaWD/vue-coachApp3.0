@@ -17,12 +17,10 @@ export default {
     const mode = payload.mode;
 
     if (mode === 'signup') {
-      url =
-        'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=insert_api_key_here';
+      url = `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${process.env.VUE_APP_APIKEY}`;
     }
 
-    let url =
-      'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=insert_api_key_here';
+    let url = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env.VUE_APP_APIKEY}`;
 
     const response = await fetch(url, {
       method: 'POST',
