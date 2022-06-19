@@ -4,7 +4,7 @@ This app permits you to choice a coach and send him a message with email and tex
 
 You can register as user and then as coach.
 
-If you are a coach you can receive some requests from others users and you can read in your private area requests.
+If you are a coach you can receive some requests from others users and you can read them in your private area requests.
 
 To use App you need to create a Firebase Project with RealTimeDataBase and set authentication with email and password.
 
